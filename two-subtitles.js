@@ -185,7 +185,15 @@
 
             if(render.find('.dual-subs-button').length) return;
 
-            var btn = $('<div class="dual-subs-button selector button" style="margin-left:.5em">Sub2</div>');
+            var btn = $(
+                '<div class="dual-subs-button selector button" style="' +
+                'width:auto !important;height:auto !important;' +
+                'padding:.5em .8em !important;' +
+                'display:inline-flex !important;align-items:center;justify-content:center;' +
+                'font-size:1em;line-height:1;white-space:nowrap;' +
+                'background:rgba(255,255,255,.15);border-radius:2em;' +
+                '">Sub2</div>'
+            );
 
             (render.find('.player-panel__subs').length ? render.find('.player-panel__subs') : render.find('.player-panel__right')).after(btn);
 
