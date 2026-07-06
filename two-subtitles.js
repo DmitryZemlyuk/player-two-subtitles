@@ -181,7 +181,7 @@
         });
 
         Lampa.Player.listener.follow('ready', function(){
-            var render = Lampa.PlayerVideo.render();
+            var render = Lampa.Player.render();
 
             if(render.find('.dual-subs-button').length) return;
 
