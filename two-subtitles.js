@@ -186,9 +186,11 @@
             if(render.find('.dual-subs-button').length) return;
 
             var icon =
-                '<svg width="23" height="32" viewBox="0 0 23 32" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<g transform="scale(0.78)">' +
                 '<path d="M22.4357 20.0861C20.1515 23.0732 16.5508 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C16.5508 0 20.1515 1.9268 22.4357 4.9139L18.8439 7.84254C17.2872 6.09824 15.0219 5 12.5 5C7.80558 5 5 7.80558 5 12.5C5 17.1944 7.80558 20 12.5 20C15.0219 20 17.2872 18.9018 18.8439 17.1575L22.4357 20.0861Z" fill="currentColor"></path>' +
-                '<text x="22" y="31" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="currentColor" text-anchor="end">2</text>' +
+                '</g>' +
+                '<text x="24" y="24" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="currentColor" text-anchor="end">2</text>' +
                 '</svg>';
 
             var btn = $('<div class="dual-subs-button selector button" title="Вторая дорожка субтитров">' + icon + '</div>');
