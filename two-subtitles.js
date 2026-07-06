@@ -130,7 +130,7 @@
                 return;
             }
 
-            var enabled = Controller.enabled ? Controller.enabled().name : 'player_panel';
+            var enabled = Lampa.Controller.enabled ? Lampa.Controller.enabled().name : 'player_panel';
 
             var items = currentSubs.map(function(s){
                 return { title: s.label || s.name || 'Subtitle', url: s.url };
