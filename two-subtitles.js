@@ -185,15 +185,17 @@
 
             if(render.find('.dual-subs-button').length) return;
 
-            var btn = $(
-                '<div class="dual-subs-button selector button" style="' +
-                'width:auto !important;height:auto !important;' +
-                'padding:.5em .8em !important;' +
-                'display:inline-flex !important;align-items:center;justify-content:center;' +
-                'font-size:1em;line-height:1;white-space:nowrap;' +
-                'background:rgba(255,255,255,.15);border-radius:2em;' +
-                '">Sub2</div>'
-            );
+            var icon =
+                '<svg width="23" height="25" viewBox="0 0 34 25" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<g transform="translate(0,0) scale(0.6087)">' +
+                '<path d="M22.4357 20.0861C20.1515 23.0732 16.5508 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C16.5508 0 20.1515 1.9268 22.4357 4.9139L18.8439 7.84254C17.2872 6.09824 15.0219 5 12.5 5C7.80558 5 5 7.80558 5 12.5C5 17.1944 7.80558 20 12.5 20C15.0219 20 17.2872 18.9018 18.8439 17.1575L22.4357 20.0861Z" fill="currentColor"></path>' +
+                '</g>' +
+                '<g transform="translate(14,0) scale(0.6087)">' +
+                '<path d="M22.4357 20.0861C20.1515 23.0732 16.5508 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C16.5508 0 20.1515 1.9268 22.4357 4.9139L18.8439 7.84254C17.2872 6.09824 15.0219 5 12.5 5C7.80558 5 5 7.80558 5 12.5C5 17.1944 7.80558 20 12.5 20C15.0219 20 17.2872 18.9018 18.8439 17.1575L22.4357 20.0861Z" fill="currentColor"></path>' +
+                '</g>' +
+                '</svg>';
+
+            var btn = $('<div class="dual-subs-button selector button" title="Вторая дорожка субтитров">' + icon + '</div>');
 
             (render.find('.player-panel__subs').length ? render.find('.player-panel__subs') : render.find('.player-panel__right')).after(btn);
 
