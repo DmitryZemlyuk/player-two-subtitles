@@ -6,7 +6,7 @@
 
         $('body').append(
             '<style>' +
-            '.player-video__subtitles2{position:absolute;left:0;right:0;top:8%;text-align:center;' +
+            '.player-video__subtitles2{position:absolute;left:0;right:0;top:4%;text-align:center;' +
             'z-index:3;pointer-events:none}' +
             '.player-video__subtitles2>div{display:inline-block;background:rgba(0,0,0,.55);color:#fff;' +
             'padding:.3em .6em;border-radius:.3em;font-size:1.5em;line-height:1.3;' +
